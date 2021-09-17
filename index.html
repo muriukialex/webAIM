@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>webAIM</title>
+</head>
+<body>
+    <header>
+        <h1>Are the images on <strong style="font-weight: 900;">your site</strong> contrasting enough to pass the W3C requirements?</h1>
+        <h2>Find out if the images, text colors & backgrounds have enough contast here</h2>
+    </header>
+    
+    <div>
+        <div id="sentence">
+        The quick brown fox jumps over the lazy dog
+        </div>
+    </div>  
+    <main>
+        <fieldset>
+            <legend>Pick a color</legend>
+                <div class="container">
+        
+                    <section>
+                        <label for="fcolor">Foreground color</label>
+                            <input type="color" name="fcolor" id="fcolor" value="#000000">
+                    </section>
+                    <section>
+                        <label for="bcolor">Background color</label>
+                        <input type="color" name="bcolor" id="bcolor" value="#dc143c">
+                    </section>
+                </div>
+                <div style="text-align: center;"><input type="submit" value="CHECK" id="submit" style="padding: 0.5rem; cursor: pointer;background-color: rgb(29, 28, 28); color: #fff;"></div>
+        </fieldset>
+        
+        <div id="box">
+              <h3 style="font-size: 1em;">The recommended ratio is 4.5:1</h3>
+              <h3>Contrast Ratio</h3>
+              <div id="ratio"></div>  
+        </div>  
+    </main>
+
+    <footer>
+        Alex &copy; <span id="year"></span>
+    </footer>
+
+    <script src="./js/app.js">
+    </script>
+</body>
+</html> 
